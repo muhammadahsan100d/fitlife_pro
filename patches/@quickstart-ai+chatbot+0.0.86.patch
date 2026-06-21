@@ -1,0 +1,108 @@
+diff --git a/node_modules/@quickstart-ai/chatbot/dist/index.cjs b/node_modules/@quickstart-ai/chatbot/dist/index.cjs
+index 136b95a..2bddb9c 100644
+--- a/node_modules/@quickstart-ai/chatbot/dist/index.cjs
++++ b/node_modules/@quickstart-ai/chatbot/dist/index.cjs
+@@ -312,7 +312,8 @@ var Chatbot = ({
+   chatbotDetails,
+   theme,
+   position,
+-  wantToShowSuggestions = false
++  wantToShowSuggestions = false,
++  greetingMessage
+ }) => {
+   const [session, setSession] = (0, import_react.useState)({
+     started: false,
+@@ -321,7 +322,7 @@ var Chatbot = ({
+     sessionId: ""
+   });
+   const [messages, setMessages] = (0, import_react.useState)([
+-    { role: "bot", message: "Hello! How can I assist you today?" }
++    { role: "bot", message: greetingMessage || "Hello! How can I assist you today?" }
+   ]);
+   const [suggestions, setSuggestions] = (0, import_react.useState)([]);
+   const [showSuggestions, setShowSuggestions] = (0, import_react.useState)(false);
+@@ -874,7 +875,8 @@ var App = ({
+   token,
+   theme = "primary",
+   position = "right",
+-  wantToShowSuggestions = false
++  wantToShowSuggestions = false,
++  greetingMessage
+ }) => {
+   const [show, setShow] = (0, import_react2.useState)(false);
+   const [chatbotDetails, setChatbotDetails] = (0, import_react2.useState)(null);
+@@ -905,7 +907,7 @@ var App = ({
+         children: show ? /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(import_ai.AiOutlineClose, {}) : icon || /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(import_tb.TbMessageChatbot, { size: 45 })
+       }
+     ),
+-    /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(ChatbotWrapper, { show, position, children: chatbotDetails ? /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(chatbot_default, { chatbotDetails, theme, position, wantToShowSuggestions }) : /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Loader, { theme }) })
++    /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(ChatbotWrapper, { show, position, children: chatbotDetails ? /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(chatbot_default, { chatbotDetails, theme, position, wantToShowSuggestions, greetingMessage }) : /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Loader, { theme }) })
+   ] });
+ };
+ var App_default = App;
+diff --git a/node_modules/@quickstart-ai/chatbot/dist/index.d.cts b/node_modules/@quickstart-ai/chatbot/dist/index.d.cts
+index 0f0eb09..52bb353 100644
+--- a/node_modules/@quickstart-ai/chatbot/dist/index.d.cts
++++ b/node_modules/@quickstart-ai/chatbot/dist/index.d.cts
+@@ -9,6 +9,7 @@ interface AppProps {
+     theme?: 'primary' | 'secondary' | 'professional' | 'tech' | '' | undefined;
+     position?: 'left' | 'right';
+     wantToShowSuggestions?: boolean;
++    greetingMessage?: string;
+ }
+ declare const App: React.FC<AppProps>;
+ 
+diff --git a/node_modules/@quickstart-ai/chatbot/dist/index.d.ts b/node_modules/@quickstart-ai/chatbot/dist/index.d.ts
+index 0f0eb09..52bb353 100644
+--- a/node_modules/@quickstart-ai/chatbot/dist/index.d.ts
++++ b/node_modules/@quickstart-ai/chatbot/dist/index.d.ts
+@@ -9,6 +9,7 @@ interface AppProps {
+     theme?: 'primary' | 'secondary' | 'professional' | 'tech' | '' | undefined;
+     position?: 'left' | 'right';
+     wantToShowSuggestions?: boolean;
++    greetingMessage?: string;
+ }
+ declare const App: React.FC<AppProps>;
+ 
+diff --git a/node_modules/@quickstart-ai/chatbot/dist/index.js b/node_modules/@quickstart-ai/chatbot/dist/index.js
+index 579f931..b630aa0 100644
+--- a/node_modules/@quickstart-ai/chatbot/dist/index.js
++++ b/node_modules/@quickstart-ai/chatbot/dist/index.js
+@@ -276,7 +276,8 @@ var Chatbot = ({
+   chatbotDetails,
+   theme,
+   position,
+-  wantToShowSuggestions = false
++  wantToShowSuggestions = false,
++  greetingMessage
+ }) => {
+   const [session, setSession] = useState({
+     started: false,
+@@ -285,7 +286,7 @@ var Chatbot = ({
+     sessionId: ""
+   });
+   const [messages, setMessages] = useState([
+-    { role: "bot", message: "Hello! How can I assist you today?" }
++    { role: "bot", message: greetingMessage || "Hello! How can I assist you today?" }
+   ]);
+   const [suggestions, setSuggestions] = useState([]);
+   const [showSuggestions, setShowSuggestions] = useState(false);
+@@ -838,7 +839,8 @@ var App = ({
+   token,
+   theme = "primary",
+   position = "right",
+-  wantToShowSuggestions = false
++  wantToShowSuggestions = false,
++  greetingMessage
+ }) => {
+   const [show, setShow] = useState2(false);
+   const [chatbotDetails, setChatbotDetails] = useState2(null);
+@@ -869,7 +871,7 @@ var App = ({
+         children: show ? /* @__PURE__ */ jsx2(AiOutlineClose, {}) : icon || /* @__PURE__ */ jsx2(TbMessageChatbot, { size: 45 })
+       }
+     ),
+-    /* @__PURE__ */ jsx2(ChatbotWrapper, { show, position, children: chatbotDetails ? /* @__PURE__ */ jsx2(chatbot_default, { chatbotDetails, theme, position, wantToShowSuggestions }) : /* @__PURE__ */ jsx2(Loader, { theme }) })
++    /* @__PURE__ */ jsx2(ChatbotWrapper, { show, position, children: chatbotDetails ? /* @__PURE__ */ jsx2(chatbot_default, { chatbotDetails, theme, position, wantToShowSuggestions, greetingMessage }) : /* @__PURE__ */ jsx2(Loader, { theme }) })
+   ] });
+ };
+ var App_default = App;

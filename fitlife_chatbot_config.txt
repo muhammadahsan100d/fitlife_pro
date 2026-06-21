@@ -1,0 +1,65 @@
+============================================================
+FITLIFE PRO - CHATBOT CONFIGURATION & SIGNUP DETAILS
+============================================================
+
+------------------------------------------------------------
+1. SIGNUP DETAILS FOR QUICKSTART
+------------------------------------------------------------
+Name:
+John Doe
+
+Email address:
+johndoe@fitlifepro.com
+
+Password:
+FitLifePro2026!
+
+Business Name:
+FitLife Pro
+
+Business Description:
+FitLife Pro is an elite, state-of-the-art luxury fitness club. We offer 24/7 keyless mobile app access, top-tier strength and conditioning equipment, luxury infrared saunas, cryotherapy chambers, and expert personal coaching. Our mission is to provide an elite training sanctuary that pushes boundaries and maximizes physical and athletic performance.
+
+Business Category:
+Fitness & Wellness
+
+
+------------------------------------------------------------
+2. TRAINING QUESTIONS & DETAILED ANSWERS (12 Q&As)
+------------------------------------------------------------
+
+Q1: What is FitLife Pro?
+A1: FitLife Pro is a premium, elite fitness sanctuary located at 100 Fitness Boulevard, Suite A, New York. We feature state-of-the-art strength and cardio gear, cryotherapy and infrared sauna recovery suites, and personalized coaching.
+
+Q2: What are the gym hours?
+A2: We are open 24 hours a day, 7 days a week, 365 days a year. Members can access the facility anytime using our secure mobile app.
+
+Q3: What is included in the Pro Athlete membership tier?
+A3: The Pro Athlete tier costs $99/month (or $79/month billed yearly). It includes 24/7 keyless mobile app access, unlimited group fitness classes, full access to the infrared saunas & steam rooms, and 1 trainer orientation session.
+
+Q4: Do you offer a free trial or pass?
+A4: Yes, we offer a complimentary 3-day guest pass for local residents. You can request one online, at the front desk, or directly through this chat assistant.
+
+Q5: What group classes do you offer?
+A5: Our signature classes include Power HIIT, Barbell Hypertrophy, Zen Flow Yoga, Championship Boxing, Olympic Weightlifting, and Active Mobility & Stretch. Classes are unlimited for Pro and Elite members.
+
+Q6: How do I book a session with a personal trainer?
+A6: Sessions can be booked through the FitLife Pro member app, at the front desk, or by requesting a callback from one of our certified elite coaches.
+
+Q7: What recovery amenities do you have?
+A7: Our wellness recovery spa includes state-of-the-art cryotherapy chambers, infrared saunas, steam rooms, and compression therapy suites.
+
+Q8: Is parking available for members?
+A8: Yes, we offer free, secure parking for all members in the private garage located adjacent to the main entrance.
+
+Q9: Can I freeze or cancel my membership?
+A9: Yes. You can freeze or cancel your membership with a 15-day notice prior to your next billing cycle. No long-term contracts or cancellation fees apply.
+
+Q10: Do you offer nutrition coaching?
+A10: Yes, we offer personalized dietary planning and nutrition coaching. It is included in our Elite Coaching tier ($199/mo) or can be purchased as an add-on service.
+
+Q11: What is the age requirement to join?
+A11: Members must be at least 18 years old. Minors aged 16-17 may join with written parental consent and must be accompanied by an adult.
+
+Q12: Do you have locker rooms and showers?
+A12: Yes, we provide luxury locker rooms fully equipped with private showers, digital lockers, fresh towel service, and premium vanity amenities.
